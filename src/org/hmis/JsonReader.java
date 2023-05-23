@@ -9,7 +9,7 @@ import com.google.gson.JsonParser;
 
 public class JsonReader {
 
-	public static Coche[] leerCochesJSON (String archivo) {
+	public static Coche[] leerCochesJSON (String archivo){
 
 		Coche[] coches = null;
         Gson gson = new Gson();
@@ -27,7 +27,7 @@ public class JsonReader {
 
             
         } catch (Exception e) {
-            e.printStackTrace();
+            //e.printStackTrace();
         }
         return coches;
         
